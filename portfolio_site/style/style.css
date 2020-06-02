@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One|Ubuntu");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  color: black;
+  font-family: Arial;
+  height: 100vh;
+  background: url(../bilder/maya-maceka-yW-Qgw_IJXg-unsplash.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  background-color: white;
+  margin: 7%;
+}
+
+/*HEADER/HEADINGS & NAV*/
+h1 {
+  font-family: Poiret One;
+  font-size: 2.5em;
+  margin-top: 0.5%;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h2 {
+  margin: 2%;
+}
+
+h2,
+h3 {
+  color: darkorange;
+  font-family: Ubuntu;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  border-top: lightgrey 1px solid;
+  border-bottom: lightgrey 1px solid;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: Ubuntu;
+}
+
+a[href^=tel] {
+  color: inherit;
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: darkorange 3px solid;
+  color: darkorange;
+}
+
+a:hover {
+  color: darkorange;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 65px;
+}
+
+nav a:hover {
+  background-color: whitesmoke;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+header img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logoWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  width: 130px;
+  margin: auto;
+  margin-top: 2%;
+}
+
+/*CONTENT/MAIN*/
+.displayWrap {
+  margin-left: 3%;
+}
+
+.displayWrapSpecific {
+  margin-top: 3%;
+  margin-left: 13%;
+  margin-bottom: 1%;
+}
+
+.siteDisplay {
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin: 20px;
+  border: 1px solid lightgrey;
+}
+
+.displayImg {
+  width: 85%;
+  border: 1px solid lightgrey;
+}
+
+p {
+  width: 90%;
+}
+
+.textContent {
+  width: 45%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*PROJECTPAGE*/
+.projectText {
+  width: 74.7%;
+  margin-left: 13%;
+}
+
+.buttonWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+  padding: 20px;
+  background-color: darkorange;
+  border: 1px solid darkorange;
+  border-radius: 12px;
+  width: 190px;
+  -webkit-box-shadow: 2px 2px 4px #696969;
+          box-shadow: 2px 2px 4px #696969;
+  cursor: pointer;
+  margin-bottom: 2%;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*code from stackoverflow.com; subindas pm 
+https://stackoverflow.com/questions/24238330/button-css-style-not-working-on-ios*/
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+section,
+aside {
+  float: left;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section img {
+  width: 88%;
+  border: 1px solid lightgrey;
+}
+
+aside img {
+  width: 88%;
+  height: 100%;
+  border: 1px solid lightgrey;
+}
+
+section {
+  margin-left: 12.2%;
+  width: 40%;
+}
+
+aside {
+  width: 40%;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.back {
+  position: absolute;
+  padding: 1%;
+  margin-top: 3%;
+  margin-left: 14%;
+}
+
+/*FOOTER*/
+footer {
+  border-top: lightgrey 1px solid;
+  background-color: #2E2E2E;
+  display: inline-block;
+  max-height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-top: 5%;
+}
+
+footer p {
+  font-size: 0.8em;
+  padding-bottom: 2%;
+  width: 33.40%;
+  display: inline-block;
+  text-align: center;
+}
+
+footer p, footer a {
+  color: white;
+}
+
+/*ABOUT PAGE*/
+.aboutImg {
+  width: 33%;
+  margin: auto;
+  display: block;
+  margin-top: 3%;
+}
+
+/*CONTACT PAGE*/
+.contact .pageContent {
+  width: 30%;
+  margin-left: 36%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: darkorange;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  max-width: 100px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1240px) {
+  .displayWrap {
+    width: 90%;
+    display: block;
+    float: none;
+  }
+  .siteDisplay {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+  .textContent {
+    width: 77%;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin-top: 4%;
+    margin-bottom: 3%;
+  }
+  input[type=text],
+  select,
+  textarea {
+    width: 40%;
+  }
+  .contact .pageContent {
+    width: 70%;
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .aboutImg {
+    width: 75%;
+    margin-bottom: 3%;
+  }
+  section,
+  aside {
+    width: 90%;
+    display: block;
+    float: none;
+    padding: 0px;
+  }
+  section img {
+    width: 96%;
+  }
+  aside img {
+    width: 96%;
+  }
+  section {
+    width: 77%;
+    margin-top: 3%;
+    margin-left: 13%;
+    margin-bottom: 3%;
+  }
+  aside {
+    width: 77%;
+    margin-top: 3%;
+    margin-left: 13%;
+    margin-bottom: 3%;
+  }
+  input[type=text],
+  select,
+  textarea {
+    width: 65%;
+  }
+  .contact .pageContent {
+    width: 70%;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+  }
+  .button {
+    width: 150px;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .aboutImg {
+    width: 85%;
+  }
+  .displayWrap {
+    width: 90%;
+    display: block;
+    float: none;
+  }
+  .siteDisplay {
+    width: 100%;
+    display: block;
+    float: none;
+    margin: 1%;
+  }
+  .textContent {
+    width: 87%;
+  }
+  .back {
+    margin-top: 14%;
+    margin-left: 12%;
+    font-size: 0.9em;
+  }
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 4%;
+  }
+  section,
+  aside {
+    padding-top: 3%;
+  }
+  .button {
+    width: 150px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 650px) {
+  nav a {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 568px) {
+  nav a {
+    padding: 10px 12px;
+  }
+  .button {
+    width: 150px;
+    font-size: 0.8em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
