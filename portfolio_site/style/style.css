@@ -162,6 +162,7 @@ footer p, footer a {
 }
 
 .gitButton {
+  font-size: 1em;
   background-color: black;
   background-image: url(../bilder/github_icon.svg);
   background-size: 90% 90%;
@@ -169,17 +170,13 @@ footer p, footer a {
   background-position: 75px 4px;
   border: none;
   margin: auto;
+  margin-top: 4%;
   display: block;
   width: 220px;
   height: 80px;
   padding-right: 90px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  /*& img {
-        display: inline-block;
-        width: 50px;
-        margin-left: 5%;
-    }*/
 }
 
 .gitButton:hover {
@@ -307,7 +304,7 @@ section:after {
 }
 
 .aboutImg {
-  height: 570px;
+  max-width: 35%;
   margin: auto;
   display: block;
   float: left;
@@ -326,7 +323,11 @@ section:after {
   position: relative;
   float: left;
   width: 20%;
-  margin-top: 3%;
+  margin-top: 0%;
+}
+
+.iconContainer h3 {
+  margin-bottom: 5%;
 }
 
 .aboutIcons {
@@ -337,8 +338,8 @@ section:after {
 
 /*CONTACT PAGE*/
 .contact .pageContent {
-  width: 30%;
-  margin-left: 36%;
+  width: 25%;
+  margin: auto;
   margin-top: 5%;
   margin-bottom: 4%;
 }
@@ -353,6 +354,9 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  display: block;
+  width: 100%;
+  font-family: Arial;
 }
 
 input[type=submit] {
@@ -367,6 +371,9 @@ input[type=submit] {
 
 /*MEDIA QUERIES*/
 @media (max-width: 1240px) {
+  nav a {
+    padding: 10px 50px;
+  }
   .displayWrap {
     width: 90%;
     display: block;
@@ -385,24 +392,33 @@ input[type=submit] {
     margin-top: 4%;
     margin-bottom: 3%;
   }
-  input[type=text],
-  select,
-  textarea {
-    width: 40%;
+  .about h2 {
+    width: 100%;
+    position: absolute;
+    margin-left: -13%;
+    margin-top: -55%;
   }
-  .contact .pageContent {
-    width: 70%;
-    margin-left: 35%;
-    margin-top: 5%;
-    margin-bottom: 4%;
+  .aboutImg {
+    float: none;
+    max-width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .aboutTextContent {
+    float: none;
+    width: 50%;
+    margin: auto;
+  }
+  .iconContainer {
+    float: none;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 810px) {
-  .aboutImg {
-    width: 75%;
-    margin-bottom: 3%;
-  }
   section,
   aside {
     width: 90%;
@@ -428,26 +444,37 @@ input[type=submit] {
     margin-left: 13%;
     margin-bottom: 3%;
   }
-  input[type=text],
-  select,
-  textarea {
-    width: 65%;
-  }
   .contact .pageContent {
-    width: 70%;
-    margin-left: 25%;
-    margin-top: 5%;
-    margin-bottom: 4%;
+    width: 50%;
   }
   .button, .gitButton {
     width: 150px;
     font-size: 0.8em;
   }
+  .gitButton {
+    width: 211px;
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 750px) {
+  nav a {
+    padding: 10px 30px;
+  }
+  .about h2 {
+    margin-top: -95%;
+    margin-left: -30%;
+    font-size: 1.5em;
+  }
   .aboutImg {
-    width: 85%;
+    margin-top: 0%;
+    max-width: 90%;
+  }
+  .iconContainer {
+    width: 90%;
+  }
+  .iconContainer h3 {
+    margin-left: 2%;
   }
   .displayWrap {
     width: 90%;
@@ -480,9 +507,19 @@ input[type=submit] {
     width: 150px;
     font-size: 0.8em;
   }
+  .gitButton {
+    width: 211px;
+    font-size: 1em;
+  }
 }
 
 @media (max-width: 650px) {
+  .about h2 {
+    margin-top: -105%;
+  }
+  .aboutImg {
+    max-width: 100%;
+  }
   nav a {
     padding: 10px 30px;
   }
@@ -495,6 +532,10 @@ input[type=submit] {
   .button, .gitButton {
     width: 150px;
     font-size: 0.8em;
+  }
+  .gitButton {
+    width: 211px;
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */
