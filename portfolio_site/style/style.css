@@ -170,7 +170,7 @@ footer p, footer a {
   background-position: 75px 4px;
   border: none;
   margin: auto;
-  margin-top: 4%;
+  margin-top: 2%;
   display: block;
   width: 220px;
   height: 80px;
@@ -185,8 +185,35 @@ footer p, footer a {
 }
 
 /*CONTENT/MAIN*/
+.arrows {
+  width: 50%;
+  margin: auto;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.prev {
+  margin-right: 45%;
+}
+
+.next {
+  margin-left: 45%;
+}
+
+.carousel {
+  width: 50%;
+  margin: auto;
+}
+
 .displayWrap {
-  margin-left: 3%;
+  width: 100%;
+  margin: auto;
 }
 
 .displayWrapSpecific {
@@ -199,6 +226,14 @@ footer p, footer a {
   width: 30%;
   float: left;
   margin: 20px;
+  border: 1px solid lightgrey;
+}
+
+.homeSiteDisplay {
+  width: 100%;
+  float: none;
+  display: block;
+  margin: auto;
   border: 1px solid lightgrey;
 }
 

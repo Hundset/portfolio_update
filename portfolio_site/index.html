@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <meta lang="en">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href='https://css.gg/arrow-left-o.css' rel='stylesheet'>
     </head>
 
 <body class="home">
@@ -30,13 +31,24 @@
 
     <h2>Latest projects:</h2>
 
-    <div class="carousel-wrap">
-        <div class="displayWrap"><a href="project/project.html"><img class="siteDisplay" src="bilder/ccc_screenshot.png" alt="screenshot of website"></a></div>
-        <div class="displayWrap"><a href="project_2/project_2.html"><img class="siteDisplay" src="bilder/dfirh_screenshot.png" alt="screenshot of website"></a></div>
-        <div class="displayWrap"><a href="project_3/project_3.html"><img class="siteDisplay" src="bilder/re_cycle_screenshot.png" alt="screenshot of website"></a></div>
+    <!--<div id="carousel">
+        <img class="siteDisplay">
+    </div>-->
+
+    <div class="carousel">     
+        <div class="displayWrap carousel__slide carousel__slide--active"><a href="project/project.html"><img class="homeSiteDisplay" src="bilder/ccc_screenshot.png" alt="screenshot of website"></a></div>
+        <div class="displayWrap carousel__slide"><a href="project_2/project_2.html"><img class="homeSiteDisplay" src="bilder/dfirh_screenshot.png" alt="screenshot of website"></a></div>
+        <div class="displayWrap carousel__slide"><a href="project_3/project_3.html"><img class="homeSiteDisplay" src="bilder/re_cycle_screenshot.png" alt="screenshot of website"></a></div>
+    </div>
+
+    <div class="arrows">
+        <a class="prev" onclick="nextPreview(-1)">&#10094;</a>
+        <a class="next" onclick="nextPreview(1)">&#10095;</a>
     </div>
 
     <a href="https://github.com/Hundset"><button class="gitButton">Check out my GitHub</button></a>
+
+    <script src="script/carousel.js"></script>
 
     <footer>
            <span class="footerbox">
