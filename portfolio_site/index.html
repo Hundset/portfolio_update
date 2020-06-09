@@ -6,43 +6,62 @@
         <meta charset="utf-8">
         <meta lang="en">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href='https://css.gg/arrow-left-o.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     </head>
 
 <body class="home">
-    <header>
-        <div class="logoWrap"><a class="logo" href="index.html"><img class="logo" src="bilder/birb_logo2.jpg" alt="Hundsie's logo"></a></div>
-        <h1><a href="index.html">Robin's Portfolio</a></h1>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="projects/projects.html">Projects</a>
-            <a href="about/about.html">About</a>
-            <a href="contact/contact.html">Contact</a>
-        </nav>
-    </header>
-    <div class="textContent">
-        <p>
-            Greetings! Welcome to my portfolio! I am an aspiring frontend developer looking to help people build effective yet visually appealing and intuitive websites.
-            </p>
-            <p>
-            Please poke around! I hope you enjoy your stay.
-            </p>
-    </div>
+    <div class="page-wrapper">
+            <header>
+                <div class="logoWrap"><a class="logo" href="index.html"><img class="logo" src="bilder/birb_logo2.jpg" alt="Hundsie's logo"></a></div>
+                <h1><a href="index.html">Robin's Portfolio</a></h1>
+                <nav>
+                    <a href="index.html" class="active">Home</a>
+                    <a href="projects/projects.html">Projects</a>
+                    <a href="about/about.html">About</a>
+                    <a href="contact/contact.html">Contact</a>
+                </nav>
+            </header>
+            <div class="textContent">
+                <p>
+                    Greetings! Welcome to my portfolio! I am an aspiring frontend developer looking to help people build effective yet visually appealing and intuitive websites.
+                    </p>
+                    <p>
+                    Please poke around! I hope you enjoy your stay.
+                    </p>
+            </div>
 
-    <h2>Latest projects:</h2>
+            <h2>Latest projects:</h2>
 
-    <div class="carousel-wrap">
-        <div class="displayWrap"><a href="project/project.html"><img class="siteDisplay" src="bilder/ccc_screenshot.png" alt="screenshot of website"></a></div>
-        <div class="displayWrap"><a href="project_2/project_2.html"><img class="siteDisplay" src="bilder/dfirh_screenshot.png" alt="screenshot of website"></a></div>
-        <div class="displayWrap"><a href="project_3/project_3.html"><img class="siteDisplay" src="bilder/re_cycle_screenshot.png" alt="screenshot of website"></a></div>
-    </div>
+            <!--<div id="carousel">
+                <img class="siteDisplay">
+            </div>-->
 
-    <a href="https://github.com/Hundset"><button class="gitButton">Check out my GitHub</button></a>
+            <div class="carousel">
+                <a class="prev" onclick="nextPreview(-1)">&#10094;</a>     
+                <div class="carousel__slide carousel__slide--active"><a href="project/project.html"><img class="homeSiteDisplay" src="bilder/ccc_screenshot.png" alt="screenshot of website"></a></div>
+                <div class="carousel__slide"><a href="project_2/project_2.html"><img class="homeSiteDisplay" src="bilder/dfirh_screenshot.png" alt="screenshot of website"></a></div>
+                <div class="carousel__slide"><a href="project_3/project_3.html"><img class="homeSiteDisplay" src="bilder/re_cycle_screenshot.png" alt="screenshot of website"></a></div>
+                <a class="next" onclick="nextPreview(1)">&#10095;</a>
+            </div>
 
-    <footer>
-           <span class="footerbox">
-            <p><a href="contact/contact.html">Contact</a></p> 
-            </span>
-    </footer>
+        <div class="buttonWrap">
+            <a href="https://github.com/Hundset"></a><button class="gitButton">Check out my GitHub</button></a>
+        </div>
+            <div class="push"></div>
+        </div><!--page-wrapper-->
+            <footer>
+                <span class="footerbox">
+                    <p><a href="contact/contact.html">Contact</a></p> 
+                    </span>
+                    <ul>
+                        <li><a><i class="fab fa-github-square"></i></a></li>
+                        <li><a><i class="fab fa-linkedin"></i></a></li>
+                    </ul> 
+            </footer>  
+            
+    <script src="script/carousel.js"></script>    
 </body>    
     
 </html>

@@ -8,13 +8,27 @@ html {
   color: black;
   font-family: Arial;
   height: 100vh;
-  background: url(../bilder/maya-maceka-yW-Qgw_IJXg-unsplash.jpg) no-repeat center center fixed;
-  background-size: cover;
+  /*background: url(../bilder/maya-maceka-yW-Qgw_IJXg-unsplash.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
 }
 
 body {
+  height: 100%;
   background-color: white;
-  margin: 7%;
+  margin: 0%;
+  /*margin: 7%;*/
+}
+
+.page-wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.push {
+  height: 50px;
 }
 
 /*HEADER/HEADINGS & NAV*/
@@ -118,16 +132,12 @@ footer {
   border-top: lightgrey 1px solid;
   background-color: #2E2E2E;
   display: inline-block;
-  max-height: 100%;
   width: 100%;
-  left: 0;
-  bottom: 0;
-  margin-top: 5%;
+  height: 10%;
 }
 
 footer p {
   font-size: 0.8em;
-  padding-bottom: 2%;
   width: 100%;
   text-align: center;
 }
@@ -136,6 +146,36 @@ footer p, footer a {
   color: white;
 }
 
+footer li {
+  list-style-type: none;
+  display: inline;
+}
+
+.fab {
+  font-size: 3rem;
+  color: white;
+  float: right;
+  margin-right: 2%;
+  vertical-align: auto;
+}
+
+/*.footer-icons {
+    float: right;
+    margin-top: -2.3%;
+    margin-left: 85%;
+}
+
+.footer-icons li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 5%;
+    max-width: 20px;
+}
+
+footer img {
+    width: 100%;
+}*/
+/*BUTTONS*/
 .buttonWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,13 +210,12 @@ footer p, footer a {
   background-position: 75px 4px;
   border: none;
   margin: auto;
-  margin-top: 4%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   display: block;
   width: 220px;
   height: 80px;
   padding-right: 90px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .gitButton:hover {
@@ -185,8 +224,25 @@ footer p, footer a {
 }
 
 /*CONTENT/MAIN*/
+.prev, .next {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 1%;
+  margin-top: 23%;
+}
+
+.carousel {
+  width: 60%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .displayWrap {
-  margin-left: 3%;
+  width: 100%;
+  margin: auto;
 }
 
 .displayWrapSpecific {
@@ -199,6 +255,14 @@ footer p, footer a {
   width: 30%;
   float: left;
   margin: 20px;
+  border: 1px solid lightgrey;
+}
+
+.homeSiteDisplay {
+  width: 100%;
+  float: none;
+  display: block;
+  margin: auto;
   border: 1px solid lightgrey;
 }
 
@@ -220,6 +284,10 @@ p {
 }
 
 /*PROJECTPAGE*/
+.past-projects {
+  margin-bottom: 5%;
+}
+
 .projectText {
   width: 74.7%;
   margin-left: 13%;
@@ -370,9 +438,18 @@ input[type=submit] {
 }
 
 /*MEDIA QUERIES*/
+@media (max-width: 1340px) {
+  .aboutImg {
+    max-width: 40%;
+  }
+}
+
 @media (max-width: 1240px) {
   nav a {
     padding: 10px 50px;
+  }
+  .carousel {
+    width: 70%;
   }
   .displayWrap {
     width: 90%;
@@ -383,9 +460,10 @@ input[type=submit] {
     width: 100%;
     display: block;
     float: none;
+    margin: auto;
   }
   .textContent, .aboutTextContent {
-    width: 77%;
+    width: 70%;
   }
   h2 {
     font-size: 1.2em;
@@ -461,6 +539,9 @@ input[type=submit] {
   nav a {
     padding: 10px 30px;
   }
+  .carousel {
+    width: 100%;
+  }
   .about h2 {
     margin-top: -95%;
     margin-left: -30%;
@@ -486,6 +567,7 @@ input[type=submit] {
     display: block;
     float: none;
     margin: 1%;
+    margin: auto;
   }
   .textContent, .aboutTextContent {
     width: 87%;
@@ -510,6 +592,8 @@ input[type=submit] {
   .gitButton {
     width: 211px;
     font-size: 1em;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 }
 
@@ -536,6 +620,8 @@ input[type=submit] {
   .gitButton {
     width: 211px;
     font-size: 1em;
+    margin-bottom: 0%;
+    margin-top: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
