@@ -133,7 +133,7 @@ footer {
   background-color: #2E2E2E;
   display: inline-block;
   width: 100%;
-  height: 70px;
+  height: 10%;
 }
 
 footer p {
@@ -146,6 +146,36 @@ footer p, footer a {
   color: white;
 }
 
+footer li {
+  list-style-type: none;
+  display: inline;
+}
+
+.fab {
+  font-size: 3rem;
+  color: white;
+  float: right;
+  margin-right: 2%;
+  vertical-align: auto;
+}
+
+/*.footer-icons {
+    float: right;
+    margin-top: -2.3%;
+    margin-left: 85%;
+}
+
+.footer-icons li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 5%;
+    max-width: 20px;
+}
+
+footer img {
+    width: 100%;
+}*/
+/*BUTTONS*/
 .buttonWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,8 +216,6 @@ footer p, footer a {
   width: 220px;
   height: 80px;
   padding-right: 90px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .gitButton:hover {
@@ -512,7 +540,7 @@ input[type=submit] {
     padding: 10px 30px;
   }
   .carousel {
-    width: 90%;
+    width: 100%;
   }
   .about h2 {
     margin-top: -95%;
