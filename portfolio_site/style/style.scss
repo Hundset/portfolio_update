@@ -9,12 +9,6 @@ html {
     color: black;
     font-family: Arial;
     height: 100vh;
-    /*background: url(../bilder/maya-maceka-yW-Qgw_IJXg-unsplash.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
-
 }
 
 body {
@@ -156,27 +150,14 @@ footer li {
     vertical-align: auto;
 }
 
+.fa-linkedin {
+    color: #2867B2;
+}
+
 .fab:hover {
     color: darkorange;
     transition-duration: 0.5s;
 }
-
-/*.footer-icons {
-    float: right;
-    margin-top: -2.3%;
-    margin-left: 85%;
-}
-
-.footer-icons li {
-    display: inline;
-    list-style-type: none;
-    padding-left: 5%;
-    max-width: 20px;
-}
-
-footer img {
-    width: 100%;
-}*/
 
 /*BUTTONS*/
 
@@ -197,7 +178,7 @@ footer img {
     width: 190px;
     box-shadow: 2px 2px 4px #696969;
     cursor: pointer;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 .gitButton {
@@ -216,11 +197,13 @@ footer img {
     width: 220px;
     height: 80px;
     padding-right: 90px;
+    box-shadow: none;
+    text-decoration: none;
 }
 
 .gitButton:hover {
-    color: white;
-    text-decoration: underline;
+    color: darkorange;
+    transition-duration: 0.5s;
 }
 
 /*CONTENT/MAIN*/
@@ -239,40 +222,30 @@ footer img {
     display: flex;
 }
 
-.displayWrap {
-    width: 100%;
-    margin: auto;
-}
-
-.displayWrapSpecific {
-    margin-top: 3%;
-    margin-left: 13%;
-    margin-bottom: 1%;
-}
-
-.siteDisplay {
-    width: 30%;
-    float: left;
-    margin: 20px;
-    border: 1px solid lightgrey;
-}
-
 .homeSiteDisplay {
     width: 100%;
-    float: none;
     display: block;
     margin: auto;
     border: 1px solid lightgrey;
 }
 
 .displayImg {
-    width: 85%;
+    width: 100%;
     border: 1px solid lightgrey;
+    margin: auto;
 }
 
 p {
     width: 90%;
     font-family: Ubuntu;
+}
+
+p:last-of-type {
+    margin-bottom: 5%;
+}
+
+footer p:last-of-type {
+    margin-bottom: 0%;
 }
 
 .textContent {
@@ -282,10 +255,40 @@ p {
     margin-bottom: 2%;
 }
 
+
+.displayWrap {
+    width: 100%;
+    margin: auto;
+}
+
 /*PROJECTPAGE*/
 
 .past-projects {
+    width: 95%;
+    margin: auto;
     margin-bottom: 5%;
+    text-align: center;
+}
+
+.displayWrapSpecific {
+    margin-top: 3%;
+    margin-left: 13%;
+    margin-bottom: 1%;
+    width: 75%;
+}
+
+.siteDisplay {
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid lightgrey;
+    transition: transform .2s;
+}
+
+.siteDisplay:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .projectText {
@@ -348,6 +351,36 @@ section:after {
     padding: 1%;
     margin-top: 3%;
     margin-left: 14%;
+}
+
+/*overlay images*/
+
+// inspiration/reference for overlay effect in CSS: https://www.sylvaindurand.org/overlay-image-in-pure-css/#_
+
+#superimposed {
+    display: flex;
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+#superimposed img {
+    max-width: 95%;
+    width: auto;
+    margin: auto;
+    transition: transform .2s;
+}
+
+#project_content img:hover {
+    cursor: pointer;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 0.2s;
 }
 
 /*ABOUT PAGE*/
@@ -471,6 +504,12 @@ input[type=submit] {
         display: block;
         float: none;
         margin: auto;
+    }
+
+    .siteDisplay:hover {
+        -ms-transform: none;
+        -webkit-transform: none;
+        transform: none;
     }
 
     .textContent {
@@ -666,7 +705,6 @@ input[type=submit] {
     .gitButton {
         width: 211px;
         font-size: 1em;
-        margin-bottom: 0%;
-        margin-top: 10%;
+        margin-top: 5%;
     }
 }
