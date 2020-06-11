@@ -1,4 +1,6 @@
 
+// Inspiration/reference: "enhancing the DOM" by Ray Villalobos, videos: "Creating and Styling an Overlay with Javascript", "Adding an Image" and "Handling clicks" - https://www.linkedin.com/learning/javascript-enhancing-the-dom/creating-and-styling-an-overlay-with-javascript?u=43268076
+
 var projectDisplay = document.querySelector('#project_content')
 
 projectDisplay.addEventListener('click', function(e) {

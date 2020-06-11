@@ -99,21 +99,17 @@ nav a:hover {
           transition-duration: 0.5s;
 }
 
-header img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .logoWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logo {
   width: 130px;
-  margin: auto;
   margin-top: 2%;
   margin-bottom: -1%;
 }
@@ -172,6 +168,8 @@ footer li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .button, .gitButton {
@@ -199,8 +197,6 @@ footer li {
   background-position: 75px 4px;
   border: none;
   margin: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
   display: block;
   width: 220px;
   height: 80px;
@@ -233,11 +229,15 @@ footer li {
   display: flex;
 }
 
-.homeSiteDisplay {
-  width: 100%;
-  display: block;
+.homeSiteDisplay, .subSiteDisplay {
+  width: 60%;
+  display: inline-block;
   margin: auto;
   border: 1px solid lightgrey;
+}
+
+.subSiteDisplay {
+  width: 30%;
 }
 
 .displayImg {
@@ -538,6 +538,16 @@ input[type=submit] {
   }
 }
 
+@media screen and (max-width: 823px) {
+  footer {
+    height: 17%;
+  }
+  .fab {
+    margin-right: 5%;
+    margin-top: -4%;
+  }
+}
+
 @media screen and (max-width: 810px) {
   section,
   aside {
@@ -663,6 +673,25 @@ input[type=submit] {
     width: 211px;
     font-size: 1em;
     margin-top: 5%;
+  }
+}
+
+/*Landscape orientation:*/
+@media screen and (max-width: 823px) and (orientation: landscape) {
+  footer {
+    height: 25%;
+  }
+  #superimposed img {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+  footer {
+    height: 25%;
+  }
+  .fab {
+    margin-top: -5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
