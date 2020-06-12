@@ -229,15 +229,11 @@ footer li {
   display: flex;
 }
 
-.homeSiteDisplay, .subSiteDisplay {
-  width: 60%;
-  display: inline-block;
+.homeSiteDisplay {
+  width: 100%;
+  display: block;
   margin: auto;
   border: 1px solid lightgrey;
-}
-
-.subSiteDisplay {
-  width: 30%;
 }
 
 .displayImg {

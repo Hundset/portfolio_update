@@ -106,6 +106,7 @@ nav a:hover {
     width: 130px;
     margin-top: 2%;
     margin-bottom: -1%;
+
 }
 
 /*FOOTER*/
@@ -218,15 +219,10 @@ footer li {
 }
 
 .homeSiteDisplay {
-    width: 60%;
-    display: inline-block;
+    width: 100%;
+    display: block;
     margin: auto;
     border: 1px solid lightgrey;
-}
-
-.subSiteDisplay {
-    @extend .homeSiteDisplay;
-    width: 30%;
 }
 
 .displayImg {
