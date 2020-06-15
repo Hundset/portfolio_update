@@ -1,0 +1,32 @@
+.contact .pageContent {
+    width: 25%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: block;
+    width: 100%;
+    font-family: Arial;
+}
+
+input[type=submit] {
+    background-color: $highlight;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    max-width: 100px;
+
+}

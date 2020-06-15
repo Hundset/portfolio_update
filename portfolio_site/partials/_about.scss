@@ -1,0 +1,53 @@
+
+.about h2 {
+    width: 100%;
+    margin-left: -40%;
+    position: absolute;
+}
+
+.about h3 {
+    text-align: left;
+    margin-bottom: 0%;
+}
+
+.about h3:first-of-type {
+    text-align: left;
+}
+
+.about p:last-of-type {
+    margin-bottom: 0%;
+}
+
+.aboutImg {
+    max-width: 35%;
+    margin: auto;
+    display: block;
+    float: left;
+}
+
+.aboutTextContent {
+    @extend .textContent;
+    width: 35%;
+    float: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+}
+
+.iconContainer {
+    display: block;
+    position: relative;
+    float: left;
+    width: 20%;
+    margin-top: 0%;
+
+    & h3 {
+        margin-bottom: 5%;
+    }
+}
+
+.aboutIcons {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}

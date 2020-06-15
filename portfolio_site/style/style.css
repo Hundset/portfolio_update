@@ -1,4 +1,204 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One|Ubuntu");
+.buttonWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.button, .gitButton {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+  padding: 20px;
+  background-color: darkorange;
+  border: 1px solid darkorange;
+  border-radius: 20px;
+  width: 190px;
+  -webkit-box-shadow: 2px 2px 4px #696969;
+          box-shadow: 2px 2px 4px #696969;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+.gitButton {
+  font-size: 1em;
+  background-color: black;
+  background-image: url(../bilder/github_icon.svg);
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: 75px 4px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 220px;
+  height: 80px;
+  padding-right: 90px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+.gitButton:hover {
+  color: darkorange;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.past-projects {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.displayWrapSpecific {
+  margin-top: 3%;
+  margin-left: 13%;
+  margin-bottom: 1%;
+  width: 75%;
+}
+
+.siteDisplay {
+  width: 30%;
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid lightgrey;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.siteDisplay:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.projectText {
+  width: 74.7%;
+  margin-left: 13%;
+}
+
+.button:hover, .gitButton:hover {
+  text-decoration: underline;
+}
+
+.button:active, .gitButton:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*code from stackoverflow.com; subindas pm 
+https://stackoverflow.com/questions/24238330/button-css-style-not-working-on-ios*/
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+section,
+aside {
+  float: left;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section img {
+  width: 88%;
+  border: 1px solid lightgrey;
+}
+
+aside img {
+  width: 88%;
+  height: 100%;
+  border: 1px solid lightgrey;
+}
+
+section {
+  margin-left: 12.2%;
+  width: 40%;
+}
+
+aside {
+  width: 40%;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.back {
+  position: absolute;
+  padding: 1%;
+  margin-top: 3%;
+  margin-left: 14%;
+}
+
+/*overlay images*/
+#superimposed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+#superimposed img {
+  max-width: 90%;
+  width: auto;
+  margin: auto;
+}
+
+#project_content img:hover {
+  cursor: pointer;
+}
+
+.contact .pageContent {
+  width: 25%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  display: block;
+  width: 100%;
+  font-family: Arial;
+}
+
+input[type=submit] {
+  background-color: darkorange;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  max-width: 100px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,7 +214,6 @@ body {
   height: 100%;
   background-color: white;
   margin: 0%;
-  /*margin: 7%;*/
 }
 
 .page-wrapper {
@@ -160,58 +359,6 @@ footer li {
           transition-duration: 0.5s;
 }
 
-/*BUTTONS*/
-.buttonWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-
-.button, .gitButton {
-  text-align: center;
-  font-weight: bold;
-  color: white;
-  font-size: 1em;
-  padding: 20px;
-  background-color: darkorange;
-  border: 1px solid darkorange;
-  border-radius: 20px;
-  width: 190px;
-  -webkit-box-shadow: 2px 2px 4px #696969;
-          box-shadow: 2px 2px 4px #696969;
-  cursor: pointer;
-  margin-bottom: 5%;
-}
-
-.gitButton {
-  font-size: 1em;
-  background-color: black;
-  background-image: url(../bilder/github_icon.svg);
-  background-size: 90% 90%;
-  background-repeat: no-repeat;
-  background-position: 75px 4px;
-  border: none;
-  margin: auto;
-  display: block;
-  width: 220px;
-  height: 80px;
-  padding-right: 90px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-decoration: none;
-}
-
-.gitButton:hover {
-  color: darkorange;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-}
-
 /*CONTENT/MAIN*/
 .prev, .next {
   cursor: pointer;
@@ -267,125 +414,7 @@ footer p:last-of-type {
   margin: auto;
 }
 
-/*PROJECTPAGE*/
-.past-projects {
-  width: 95%;
-  margin: auto;
-  margin-bottom: 5%;
-  text-align: center;
-}
-
-.displayWrapSpecific {
-  margin-top: 3%;
-  margin-left: 13%;
-  margin-bottom: 1%;
-  width: 75%;
-}
-
-.siteDisplay {
-  width: 30%;
-  display: inline-block;
-  margin: 20px;
-  border: 1px solid lightgrey;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-.siteDisplay:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.projectText {
-  width: 74.7%;
-  margin-left: 13%;
-}
-
-.button:hover, .gitButton:hover {
-  text-decoration: underline;
-}
-
-.button:active, .gitButton:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-/*code from stackoverflow.com; subindas pm 
-https://stackoverflow.com/questions/24238330/button-css-style-not-working-on-ios*/
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-section,
-aside {
-  float: left;
-  padding: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-section img {
-  width: 88%;
-  border: 1px solid lightgrey;
-}
-
-aside img {
-  width: 88%;
-  height: 100%;
-  border: 1px solid lightgrey;
-}
-
-section {
-  margin-left: 12.2%;
-  width: 40%;
-}
-
-aside {
-  width: 40%;
-}
-
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.back {
-  position: absolute;
-  padding: 1%;
-  margin-top: 3%;
-  margin-left: 14%;
-}
-
-/*overlay images*/
-#superimposed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-}
-
-#superimposed img {
-  max-width: 90%;
-  width: auto;
-  margin: auto;
-}
-
-#project_content img:hover {
-  cursor: pointer;
-}
-
-/*ABOUT PAGE*/
+/*CONTACT PAGE*/
 .about h2 {
   width: 100%;
   margin-left: -40%;
@@ -438,40 +467,6 @@ section:after {
   padding: 5px;
 }
 
-/*CONTACT PAGE*/
-.contact .pageContent {
-  width: 25%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 4%;
-}
-
-input[type=text],
-select,
-textarea {
-  width: 90%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  display: block;
-  width: 100%;
-  font-family: Arial;
-}
-
-input[type=submit] {
-  background-color: darkorange;
-  border: none;
-  border-radius: 20px;
-  color: white;
-  padding: 12px 20px;
-  cursor: pointer;
-  max-width: 100px;
-}
-
-/*MEDIA QUERIES*/
 @media (max-width: 1340px) {
   .aboutImg {
     max-width: 40%;

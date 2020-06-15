@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One|Ubuntu');
+
+
+@import "../partials/variables";
+@import "../partials/buttons";
+@import "../partials/projects";
+@import "../partials/contact";
 
 * {
     box-sizing: border-box;
@@ -13,9 +18,8 @@ html {
 
 body {
     height: 100%;
-    background-color: white;
+    background-color: $background;
     margin: 0%;
-    /*margin: 7%;*/
 }
 
 .page-wrapper {
@@ -30,7 +34,7 @@ body {
 /*HEADER/HEADINGS & NAV*/
 
 h1 a {
-    font-family: Poiret One;
+    font-family: $main-header;
     font-size: 1.2em;
 }
 
@@ -38,7 +42,7 @@ h1,
 h2, 
 h3,
 h4 {
-    font-family: Ubuntu;
+    font-family: $secondary-font;
 }
 
 h3,
@@ -53,7 +57,7 @@ h2 {
 
 h2 {
     margin-top: 2%;
-    color: darkorange;
+    color: $highlight;
 }
 
 nav {
@@ -70,16 +74,16 @@ nav {
 a {
     color: black;
     text-decoration: none;
-    font-family: Ubuntu;
+    font-family: $secondary-font;
 }
 
 .active {
-    border-bottom: darkorange 3px solid;
-    color: darkorange;
+    border-bottom: $highlight 3px solid;
+    color: $highlight;
 }
 
 a:hover {
-    color: darkorange;
+    color: $highlight;
     transition-duration: 0.5s;
 }
 
@@ -92,7 +96,6 @@ nav a {
 }
 
 nav a:hover {
-
     background-color: whitesmoke;
     transition-duration: 0.5s;
 }
@@ -117,7 +120,7 @@ nav a:hover {
 
 footer {
     border-top: lightgrey 1px solid;
-    background-color: #2E2E2E;
+    background-color: $footer-color;
     display: inline-block;
     width: 100%;
     height: 15%;
@@ -151,54 +154,7 @@ footer li {
 }
 
 .fab:hover {
-    color: darkorange;
-    transition-duration: 0.5s;
-}
-
-/*BUTTONS*/
-
-.buttonWrap {
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.button {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    font-size: 1em;
-    padding: 20px;
-    background-color: darkorange;
-    border: 1px solid darkorange;
-    border-radius: 20px;
-    width: 190px;
-    box-shadow: 2px 2px 4px #696969;
-    cursor: pointer;
-    margin-bottom: 5%;
-}
-
-.gitButton {
-    @extend .button;
-    font-size: 1em;
-    background-color: black;
-    background-image: url(../bilder/github_icon.svg);
-    background-size: 90% 90%;
-    background-repeat: no-repeat;
-    background-position: 75px 4px;
-    border: none;
-    margin: auto;
-    display: block;
-    width: 220px;
-    height: 80px;
-    padding-right: 90px;
-    box-shadow: none;
-    text-decoration: none;
-}
-
-.gitButton:hover {
-    color: darkorange;
+    color: $highlight;
     transition-duration: 0.5s;
 }
 
@@ -233,7 +189,7 @@ footer li {
 
 p {
     width: 90%;
-    font-family: Ubuntu;
+    font-family: $secondary-font;
 }
 
 p:last-of-type {
@@ -251,485 +207,11 @@ footer p:last-of-type {
     margin-bottom: 2%;
 }
 
-
 .displayWrap {
     width: 100%;
     margin: auto;
 }
 
-/*PROJECTPAGE*/
 
-.past-projects {
-    width: 95%;
-    margin: auto;
-    margin-bottom: 5%;
-    text-align: center;
-}
-
-.displayWrapSpecific {
-    margin-top: 3%;
-    margin-left: 13%;
-    margin-bottom: 1%;
-    width: 75%;
-}
-
-.siteDisplay {
-    width: 30%;
-    display: inline-block;
-    margin: 20px;
-    border: 1px solid lightgrey;
-    transition: transform .2s;
-}
-
-.siteDisplay:hover {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-.projectText {
-    width: 74.7%;
-    margin-left: 13%;
-}
-
-.button:hover {
-    text-decoration: underline;
-}
-
-.button:active {
-    box-shadow: none;
-}
-
-/*code from stackoverflow.com; subindas pm 
-https://stackoverflow.com/questions/24238330/button-css-style-not-working-on-ios*/
-
-input {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-}
-
-section,
-aside {
-    float: left;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-section img {
-    width: 88%;
-    border: 1px solid lightgrey;
-}
-
-aside img {
-    width: 88%;
-    height: 100%;
-    border: 1px solid lightgrey;
-}
-
-section {
-    margin-left: 12.2%;
-    width: 40%;
-}
-
-aside {
-    width: 40%;
-}
-
-section:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.back {
-    position: absolute;
-    padding: 1%;
-    margin-top: 3%;
-    margin-left: 14%;
-}
-
-/*overlay images*/
-
-// inspiration/reference for overlay effect in CSS: https://www.sylvaindurand.org/overlay-image-in-pure-css/#_
-
-#superimposed {
-    display: flex;
-    position: fixed; 
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-}
-
-#superimposed img {
-    max-width: 90%;
-    width: auto;
-    margin: auto;
-}
-
-#project_content img:hover {
-    cursor: pointer;
-}
-
-/*ABOUT PAGE*/
-
-.about h2 {
-    width: 100%;
-    margin-left: -40%;
-    position: absolute;
-}
-
-.about h3 {
-    text-align: left;
-    margin-bottom: 0%;
-}
-
-.about h3:first-of-type {
-    text-align: left;
-}
-
-.about p:last-of-type {
-    margin-bottom: 0%;
-}
-
-.aboutImg {
-    max-width: 35%;
-    margin: auto;
-    display: block;
-    float: left;
-}
-
-.aboutTextContent {
-    @extend .textContent;
-    width: 35%;
-    float: left;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 2%;
-}
-
-.iconContainer {
-    display: block;
-    position: relative;
-    float: left;
-    width: 20%;
-    margin-top: 0%;
-
-    & h3 {
-        margin-bottom: 5%;
-    }
-}
-
-.aboutIcons {
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-}
-
-/*CONTACT PAGE*/
-
-.contact .pageContent {
-    width: 25%;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 4%;
-}
-
-input[type=text],
-select,
-textarea {
-    width: 90%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    display: block;
-    width: 100%;
-    font-family: Arial;
-}
-
-input[type=submit] {
-    background-color: darkorange;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    padding: 12px 20px;
-    cursor: pointer;
-    max-width: 100px;
-
-}
-
-/*MEDIA QUERIES*/
-
-@media (max-width: 1340px) {
-
-    .aboutImg {
-        max-width: 40%;
-    }
-
-}
-
-@media (max-width: 1240px) {
-
-    nav a {
-        padding: 10px 50px;
-    }
-
-    .carousel {
-        width: 70%;
-    }
-
-    .displayWrap {
-        width: 90%;
-        display: block;
-        float: none;
-    }
-
-    .siteDisplay {
-        width: 100%;
-        display: block;
-        float: none;
-        margin: auto;
-    }
-
-    .siteDisplay:hover {
-        -ms-transform: none;
-        -webkit-transform: none;
-        transform: none;
-    }
-
-    .textContent {
-        width: 70%;
-    }
-
-    h2 {
-        font-size: 1.2em;
-        margin-top: 4%;
-        margin-bottom: 3%;
-    }
-
-    .about h2 {
-        width: 100%;
-        position: absolute;
-        margin-left: -13%;
-        margin-top: -55%;
-    }
-
-    .aboutImg {
-        float: none;
-        max-width: 50%;
-        margin-top: 3%;
-        margin-bottom: 3%;
-    }
-
-    .aboutTextContent {
-        float: none;
-        width: 50%;
-        margin: auto;
-    }
-
-    .iconContainer {
-        float: none; 
-        margin: auto;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        width: 50%;
-    }
-
-}
-
-@media screen and (max-width: 823px) {
-
-    footer {
-        height: 17%;
-    }
-
-    .fab {
-        margin-right: 5%;
-        margin-top: -4%;
-    }
-}
-
-@media screen and (max-width: 810px) {
-
-    section,
-    aside {
-        width: 90%;
-        display: block;
-        float: none;
-        padding: 0px;
-    }
-
-    section img {
-        width: 96%;
-    }
-
-    aside img {
-        width: 96%;
-    }
-
-    section {
-        width: 77%;
-        margin-top: 3%;
-        margin-left: 13%;
-        margin-bottom: 3%;
-    }
-
-    aside {
-        width: 77%;
-        margin-top: 3%;
-        margin-left: 13%;
-        margin-bottom: 3%;
-    }
-
-    .contact .pageContent {
-        width: 50%;
-    }
-    
-    .button {
-        width: 150px;
-        font-size: 0.8em;
-    }
-
-    .gitButton {
-        width: 211px;
-        font-size: 1em;
-    }
-
-}
-
-@media screen and (max-width: 750px) {
-
-    nav a {
-        padding: 10px 30px;
-    }
-
-    .carousel {
-        width: 100%;
-    }
-
-    .about h2 {
-        margin-top: -95%;
-        margin-left: -30%;
-        font-size: 1.5em;
-    }
-
-     .aboutImg {
-        margin-top: 0%;
-        max-width: 90%;
-    }
-
-    .iconContainer {
-        width: 90%;
-
-        & h3 {
-            margin-left: 2%;
-        }
-    }
-    
-    .displayWrap {
-        width: 90%;
-        display: block;
-        float: none;
-    }
-
-    .siteDisplay {
-        width: 100%;
-        display: block;
-        float: none;
-        margin: 1%;
-        margin: auto;
-    }
-
-    .textContent {
-        width: 87%;
-    }
-
-    .back {
-        margin-top: 14%;
-        margin-left: 12%;
-        font-size: 0.9em;
-    }
-
-    h3 {
-        font-size: 1.2em;
-        margin-bottom: 4%;
-    }
-
-    section,
-    aside {
-        padding-top: 3%;
-    }
-    
-    .button {
-        width: 150px;
-        font-size: 0.8em;
-    }
-
-    .gitButton {
-        width: 211px;
-        font-size: 1em;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-}
-
-@media (max-width: 650px) {
-
-    .about h2 {
-        margin-top: -105%;
-    }
-
-    .aboutImg {
-        max-width: 100%;
-    }
-
-    nav a {
-        padding: 10px 30px;
-    }
-}
-
-@media (max-width: 568px) {
-
-    nav a {
-        padding: 10px 12px;
-    }
-    
-    .button {
-        width: 150px;
-        font-size: 0.8em;
-    }
-
-    .gitButton {
-        width: 211px;
-        font-size: 1em;
-        margin-top: 5%;
-    }
-}
-
-/*Landscape orientation:*/
-
-@media screen and (max-width: 823px) and (orientation: landscape) {
-    footer {
-        height: 25%;
-    }
-
-    #superimposed img {
-        width: 85%;
-    }
-}
-
-@media screen and (max-width: 667px) and (orientation: landscape) {
-    footer {
-        height: 25%;
-    }
-    
-    .fab {
-        margin-top: -5%;
-    }
-}
+@import "../partials/about";
+@import "../partials/media-queries";

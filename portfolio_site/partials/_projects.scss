@@ -1,0 +1,115 @@
+
+.past-projects {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.displayWrapSpecific {
+    margin-top: 3%;
+    margin-left: 13%;
+    margin-bottom: 1%;
+    width: 75%;
+}
+
+.siteDisplay {
+    width: 30%;
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid lightgrey;
+    transition: transform .2s;
+}
+
+.siteDisplay:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.projectText {
+    width: 74.7%;
+    margin-left: 13%;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.button:active {
+    box-shadow: none;
+}
+
+/*code from stackoverflow.com; subindas pm 
+https://stackoverflow.com/questions/24238330/button-css-style-not-working-on-ios*/
+
+input {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+section,
+aside {
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+section img {
+    width: 88%;
+    border: 1px solid lightgrey;
+}
+
+aside img {
+    width: 88%;
+    height: 100%;
+    border: 1px solid lightgrey;
+}
+
+section {
+    margin-left: 12.2%;
+    width: 40%;
+}
+
+aside {
+    width: 40%;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.back {
+    position: absolute;
+    padding: 1%;
+    margin-top: 3%;
+    margin-left: 14%;
+}
+
+/*overlay images*/
+
+// inspiration/reference for overlay effect in CSS: https://www.sylvaindurand.org/overlay-image-in-pure-css/#_
+
+#superimposed {
+    display: flex;
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+#superimposed img {
+    max-width: 90%;
+    width: auto;
+    margin: auto;
+}
+
+#project_content img:hover {
+    cursor: pointer;
+}
