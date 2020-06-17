@@ -30,3 +30,10 @@ input[type=submit] {
     max-width: 100px;
 
 }
+
+.error {
+    color: orangered;
+    font-size: .8em;
+    display: none;
+    margin-bottom: -5px;
+}
