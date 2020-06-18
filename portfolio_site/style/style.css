@@ -158,7 +158,7 @@ section:after {
 }
 
 #superimposed img {
-  max-width: 90%;
+  max-width: 80%;
   width: auto;
   margin: auto;
 }
@@ -388,6 +388,31 @@ footer li {
   display: block;
   margin: auto;
   border: 1px solid lightgrey;
+  opacity: 1;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .displayImg {

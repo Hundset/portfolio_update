@@ -1,17 +1,4 @@
 
-/*var i = 0;
-var previews = [];
-
-previews[0] = 'http://www.hundsie.com/portfolio_site/bilder/ccc_screenshot.png';
-previews[1] = 'http://www.hundsie.com/portfolio_site/bilder/dfirh_screenshot.png';
-previews[2] = 'http://www.hundsie.com/portfolio_site/bilder/re_cycle_screenshot.png';
-
-function shiftPreview() {
-
-    document.siteDisplay.src = images[i];
-
-}*/
-
 var index = 1;
 displayPreview(index);
 
@@ -49,6 +36,5 @@ function previous(){
 function shift(n){
     previews[active].className = "carousel__slide";
     active = (n+previews.length)%previews.length;
-    previews[active].className = "carousel__slide carousel__slide--active";
 }
 

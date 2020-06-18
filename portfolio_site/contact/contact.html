@@ -23,14 +23,14 @@
     <h2>Want to get in touch?</h2>
 
     <div class="pageContent">
-    <form name="contact_form" onsubmit="return false">
+    <form name="contact_form">
         <span class="error" id="nameError">Please enter your name</span>
         <input type="text" id="name" name="name" placeholder="Name">
         <span class="error" id="emailError">Please enter a valid e-mail address</span>
         <input type="text" id="email" name="email" placeholder="E-mail">
         <span class="error" id="messageError">Please write a message</span>
         <textarea id="subject" name="subject" placeholder="What's up?" style="height:170px"></textarea>
-        <input type="submit" onclick="validateName(); validateMessage(); validateEmail();" value="SUBMIT">
+        <input type="submit" name="submit" onclick="validateName(); validateMessage(); validateEmail();" value="SUBMIT">
     </form>
     </div>
 <div class="push"></div>  
