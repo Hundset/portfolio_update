@@ -82,6 +82,10 @@ a {
     color: $highlight;
 }
 
+.link_external {
+    border-bottom: $highlight 2px solid;
+}
+
 a:hover {
     color: $highlight;
     transition-duration: 0.5s;
@@ -203,6 +207,10 @@ footer li {
 p {
     width: 90%;
     font-family: $secondary-font;
+}
+
+.home p {
+    margin: auto;
 }
 
 p:last-of-type {

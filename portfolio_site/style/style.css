@@ -285,6 +285,10 @@ a {
   color: darkorange;
 }
 
+.link_external {
+  border-bottom: darkorange 2px solid;
+}
+
 a:hover {
   color: darkorange;
   -webkit-transition-duration: 0.5s;
@@ -426,6 +430,10 @@ p {
   font-family: Ubuntu;
 }
 
+.home p {
+  margin: auto;
+}
+
 p:last-of-type {
   margin-bottom: 5%;
 }
@@ -448,7 +456,7 @@ footer p:last-of-type {
 
 .about h2 {
   width: 100%;
-  margin-left: -40%;
+  margin-left: -44%;
   position: absolute;
 }
 
@@ -530,15 +538,15 @@ footer p:last-of-type {
     width: 70%;
   }
   h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-top: 4%;
     margin-bottom: 3%;
   }
   .about h2 {
     width: 100%;
     position: absolute;
-    margin-left: -13%;
-    margin-top: -55%;
+    margin-left: -16%;
+    margin-top: -63%;
   }
   .aboutImg {
     float: none;
@@ -617,7 +625,7 @@ footer p:last-of-type {
     width: 100%;
   }
   .about h2 {
-    margin-top: -95%;
+    margin-top: -110%;
     margin-left: -30%;
     font-size: 1.5em;
   }
@@ -673,7 +681,8 @@ footer p:last-of-type {
 
 @media (max-width: 650px) {
   .about h2 {
-    margin-top: -105%;
+    margin-top: -122%;
+    margin-left: -34%;
   }
   .aboutImg {
     max-width: 100%;
