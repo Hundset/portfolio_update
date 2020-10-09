@@ -128,12 +128,12 @@ footer {
     display: inline-block;
     width: 100%;
     height: 15%;
-}
 
-footer p {
-    font-size: 0.8em;
-    width: 100%;
-    text-align: center;
+    p {
+        font-size: 0.8em;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 footer p, footer a {
@@ -209,8 +209,13 @@ p {
     font-family: $secondary-font;
 }
 
-.home p {
-    margin: auto;
+.home {
+    .textContent {
+        
+        p {
+            margin: auto;
+        }
+    }
 }
 
 p:last-of-type {

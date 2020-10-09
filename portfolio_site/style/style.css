@@ -430,7 +430,7 @@ p {
   font-family: Ubuntu;
 }
 
-.home p {
+.home .textContent p, .home .aboutTextContent p {
   margin: auto;
 }
 
